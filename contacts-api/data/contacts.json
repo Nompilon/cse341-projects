@@ -1,16 +1,34 @@
 [
   {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john@example.com",
+    "firstName": "Nompilo",
+    "lastName": "Ngwenya",
+    "phoneNumber":"012 456 7896",
+    "email": "nompilo@contacts.com",
     "favoriteColor": "Blue",
-    "birthday": "1995-06-15"
+    "birthday": "1991-04-29"
   },
   {
-    "firstName": "Jane",
-    "lastName": "Smith",
-    "email": "jane@example.com",
+    "firstName": "Mbali",
+    "lastName": "Serepe",
+    "phoneNumber":"012 456 7897",
+    "email": "mbali@contacts.com",
     "favoriteColor": "Green",
-    "birthday": "1998-09-22"
+    "birthday": "1995-10-26"
+  },
+  {
+    "firstName": "Sihle",
+    "lastName": "Ngwenya",
+    "phoneNumber":"012 456 7893",
+    "email": "sihle@contacts.com",
+    "favoriteColor": "Yellow",
+    "birthday": "1971-05-18"
+  },
+  {
+    "firstName": "Mathamsanqa",
+    "lastName": "Sibanda",
+    "phoneNumber":"012 456 7891",
+    "email": "matha@contacts.com",
+    "favoriteColor": "Green",
+    "birthday": "1992-03-24"
   }
 ]
