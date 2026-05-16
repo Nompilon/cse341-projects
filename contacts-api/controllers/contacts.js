@@ -1,5 +1,5 @@
 const { ObjectId } = require('mongodb');
-const { getDB } = require('../db');
+const { getDB } = require('../data/db');
 
 const getAllContacts = async (req, res) => {
   try {
