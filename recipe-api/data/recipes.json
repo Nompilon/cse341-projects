@@ -1,0 +1,11 @@
+{
+  "recipeName": "Chocolate Cake",
+  "category": "Dessert",
+  "ingredients": ["Flour", "Eggs", "Cocoa"],
+  "cookTime": 45,
+  "difficulty": "Easy",
+  "servings": 8,
+  "author": "Nompilo",
+  "instructions": "Mix and bake",
+  "createdAt": "2026-05-27"
+}
