@@ -1,14 +1,90 @@
 [
   {
-  "recipeName": "Chocolate Cake",
-  "category": "Dessert",
-  "ingredients": ["Flour", "Eggs", "Cocoa"],
-  "cookTime": 45,
-  "difficulty": "Easy",
-  "servings": 8,
-  "author": "Nompilo",
-  "instructions": "Mix and bake",
-  "createdAt": "2026-05-27"
-}
-
+    "recipeName": "Chocolate Cake",
+    "category": "Dessert",
+    "ingredients": ["Flour", "Eggs", "Cocoa Powder", "Sugar", "Butter"],
+    "cookTime": 45,
+    "difficulty": "Easy",
+    "servings": 8,
+    "author": "Nompilo",
+    "instructions": "Mix ingredients, pour into a baking pan, and bake at 180°C for 45 minutes.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Chicken Alfredo Pasta",
+    "category": "Dinner",
+    "ingredients": ["Chicken Breast", "Pasta", "Cream", "Parmesan Cheese", "Garlic"],
+    "cookTime": 30,
+    "difficulty": "Medium",
+    "servings": 4,
+    "author": "Nompilo",
+    "instructions": "Cook pasta, fry chicken, prepare creamy sauce, and combine.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Vegetable Stir Fry",
+    "category": "Lunch",
+    "ingredients": ["Broccoli", "Carrots", "Bell Peppers", "Soy Sauce", "Garlic"],
+    "cookTime": 20,
+    "difficulty": "Easy",
+    "servings": 3,
+    "author": "Nompilo",
+    "instructions": "Chop vegetables and stir fry with soy sauce and garlic.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Beef Tacos",
+    "category": "Dinner",
+    "ingredients": ["Ground Beef", "Taco Shells", "Lettuce", "Tomatoes", "Cheese"],
+    "cookTime": 25,
+    "difficulty": "Easy",
+    "servings": 5,
+    "author": "Nompilo",
+    "instructions": "Cook beef with seasoning and assemble tacos with toppings.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Greek Salad",
+    "category": "Salad",
+    "ingredients": ["Cucumber", "Tomatoes", "Feta Cheese", "Olives", "Olive Oil"],
+    "cookTime": 10,
+    "difficulty": "Easy",
+    "servings": 2,
+    "author": "Nompilo",
+    "instructions": "Chop ingredients, mix together, and drizzle with olive oil.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Banana Smoothie",
+    "category": "Beverage",
+    "ingredients": ["Bananas", "Milk", "Honey", "Ice Cubes"],
+    "cookTime": 5,
+    "difficulty": "Easy",
+    "servings": 2,
+    "author": "Nompilo",
+    "instructions": "Blend all ingredients until smooth.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Margherita Pizza",
+    "category": "Dinner",
+    "ingredients": ["Pizza Dough", "Tomato Sauce", "Mozzarella Cheese", "Basil"],
+    "cookTime": 35,
+    "difficulty": "Medium",
+    "servings": 4,
+    "author": "Nompilo",
+    "instructions": "Spread sauce on dough, add toppings, and bake until crispy.",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "recipeName": "Pancakes",
+    "category": "Breakfast",
+    "ingredients": ["Flour", "Milk", "Eggs", "Sugar", "Baking Powder"],
+    "cookTime": 15,
+    "difficulty": "Easy",
+    "servings": 4,
+    "author": "Nompilo",
+    "instructions": "Mix batter and cook pancakes on a hot pan until golden.",
+    "createdAt": "2026-05-29"
+  }
 ]
