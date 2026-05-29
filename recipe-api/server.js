@@ -9,6 +9,8 @@ app.use(express.json());
 
 app.use('/recipes', require('./routes/recipes'));
 
+app.use('/users', require('./routes/users'));
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const PORT = process.env.PORT || 3000;
