@@ -4,7 +4,9 @@ const { getDB } = require('../data/db');
 // GET all recipes
 const getAllRecipes = async (req, res) => {
   try {
-    const recipes = await getDB()
+    const db = getDB();
+
+    const recipes = await db
       .collection('recipes')
       .find()
       .toArray();

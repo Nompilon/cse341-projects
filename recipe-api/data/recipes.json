@@ -1,4 +1,5 @@
-{
+[
+  {
   "recipeName": "Chocolate Cake",
   "category": "Dessert",
   "ingredients": ["Flour", "Eggs", "Cocoa"],
@@ -9,3 +10,5 @@
   "instructions": "Mix and bake",
   "createdAt": "2026-05-27"
 }
+
+]
