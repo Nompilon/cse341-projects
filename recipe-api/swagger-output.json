@@ -67,6 +67,9 @@
           "201": {
             "description": "Created"
           },
+          "400": {
+            "description": "Bad Request"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -146,6 +149,12 @@
           "204": {
             "description": "No Content"
           },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -164,6 +173,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -192,31 +204,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "recipeName": {
+                "firstName": {
                   "example": "any"
                 },
-                "category": {
+                "lastName": {
                   "example": "any"
                 },
-                "ingredients": {
+                "username": {
                   "example": "any"
                 },
-                "cookTime": {
+                "email": {
                   "example": "any"
                 },
-                "difficulty": {
+                "country": {
                   "example": "any"
                 },
-                "servings": {
+                "favoriteCuisine": {
                   "example": "any"
                 },
-                "author": {
-                  "example": "any"
-                },
-                "instructions": {
-                  "example": "any"
-                },
-                "createdAt": {
+                "joinDate": {
                   "example": "any"
                 }
               }
@@ -226,6 +232,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -271,31 +280,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "recipeName": {
+                "firstName": {
                   "example": "any"
                 },
-                "category": {
+                "lastName": {
                   "example": "any"
                 },
-                "ingredients": {
+                "username": {
                   "example": "any"
                 },
-                "cookTime": {
+                "email": {
                   "example": "any"
                 },
-                "difficulty": {
+                "country": {
                   "example": "any"
                 },
-                "servings": {
+                "favoriteCuisine": {
                   "example": "any"
                 },
-                "author": {
-                  "example": "any"
-                },
-                "instructions": {
-                  "example": "any"
-                },
-                "createdAt": {
+                "joinDate": {
                   "example": "any"
                 }
               }
@@ -305,6 +308,12 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -324,6 +333,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
