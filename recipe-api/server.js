@@ -7,9 +7,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/recipes', require('./routes/recipes'));
+app.use('/recipes', require('./routes/recipesRoute'));
 
-app.use('/users', require('./routes/users'));
+app.use('/users', require('./routes/usersRoute'));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
