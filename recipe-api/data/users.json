@@ -3,7 +3,7 @@
     "firstName": "Nompilo",
     "lastName": "Ngwenya",
     "username": "nompilo_n",
-    "email": "nompilo@example.com",
+    "email": "nompilo@usermail.com",
     "country": "South Africa",
     "favoriteCuisine": "Italian",
     "joinDate": "2026-08-10"
@@ -12,7 +12,7 @@
     "firstName": "John",
     "lastName": "Smith",
     "username": "johnsmith",
-    "email": "john@example.com",
+    "email": "john@usermail.com",
     "country": "United States",
     "favoriteCuisine": "Mexican",
     "joinDate": "2026-07-15"
@@ -21,7 +21,7 @@
     "firstName": "Sarah",
     "lastName": "Johnson",
     "username": "sarahj",
-    "email": "sarah@example.com",
+    "email": "sarah@usermail.com",
     "country": "Canada",
     "favoriteCuisine": "French",
     "joinDate": "2026-06-20"
@@ -30,7 +30,7 @@
     "firstName": "David",
     "lastName": "Brown",
     "username": "davidb",
-    "email": "david@example.com",
+    "email": "david@usermail.com",
     "country": "Australia",
     "favoriteCuisine": "Thai",
     "joinDate": "2026-05-18"
@@ -39,7 +39,7 @@
     "firstName": "Maria",
     "lastName": "Garcia",
     "username": "mariag",
-    "email": "maria@example.com",
+    "email": "maria@usermail.com",
     "country": "Spain",
     "favoriteCuisine": "Spanish",
     "joinDate": "2026-04-12"
