@@ -1,5 +1,5 @@
 const express = require('express');
-const { connectDB } = require('./data/db');
+const { connectDB } = require('./data/index');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
 

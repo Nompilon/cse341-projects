@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const recipesController = require('../controllers/recipes');
+const recipesController = require('../controllers/recipesController');
 
 /* #swagger.tags = ['Recipes']
    #swagger.summary = 'Get all recipes'
