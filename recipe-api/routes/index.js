@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-router.use("/", require("./swagger"));
-router.use("/recipes", require("./recipes"));
-router.use("/users", require("./users"));
+//router.use("/", require("./swagger"));
+router.use("/recipes", require("./recipesRoute"));
+router.use("/users", require("./usersRoute"));
 
 router.get(
     '/login',

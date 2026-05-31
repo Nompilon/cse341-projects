@@ -61,7 +61,10 @@ app.use('/recipes', require('./routes/recipesRoute'));
 
 app.use('/users', require('./routes/usersRoute'));
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use(
+  '/api-docs',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerDocument));
 
 const PORT = process.env.PORT || 3000;
 
