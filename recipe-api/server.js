@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const { connectDB } = require('./data/index');
 const swaggerUi = require('swagger-ui-express');
@@ -7,7 +8,6 @@ const session = require('express-session');
 const gitHubStrategy = require('passport-github2').Strategy;
 const cors = require('cors')
 
-const port = process.env.PORT || 2000;
 const app = express();
 
 app.use(express.json());
@@ -47,7 +47,7 @@ passport.deserializeUser((user, done) => {
   done(null, user);
 });
 
-app.get('/', (req, res) => { res.send(req.session.user !== underfined ? `Logged in as ${req.session.user.displayName}` : "Logged Out") });
+app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : "Logged Out") });
 
 app.get('/github/callback', passport.authenticate('github', {
   failureRedirect: '/api-docs', session: false
@@ -57,9 +57,9 @@ app.get('/github/callback', passport.authenticate('github', {
     res.redirect('/');
   });
 
-app.use('/recipes', require('./routes/recipesRoute'));
+//app.use('/recipes', require('./routes/recipesRoute'));
 
-app.use('/users', require('./routes/usersRoute'));
+//app.use('/users', require('./routes/usersRoute'));
 
 app.use(
   '/api-docs',
