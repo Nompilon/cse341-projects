@@ -1,9 +1,11 @@
 const isAuthenticated = (req, res, next) => {
-    if (req.session.user === undefined) {
-      return res.status.json("You do not have access.")
-    }
-    next();
-  
+  if (req.isAuthenticated()) {
+    return next();
+  }
+
+  return res.status(401).json({
+    message: 'You do not have access.'
+  });
 };
 
 const isManager = (req, res, next) => {
