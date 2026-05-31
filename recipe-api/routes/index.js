@@ -5,17 +5,12 @@ const passport = require("passport");
 router.use("/recipes", require("./recipesRoute"));
 router.use("/users", require("./usersRoute"));
 
-/* #swagger.tags = ['Auth']
-   #swagger.summary = 'GitHub Login'
-*/
+
 router.get(
     '/login',
     passport.authenticate('github'),
     (req, res) => { });
 
-/* #swagger.tags = ['Auth']
-   #swagger.summary = 'GitHub Callback'
-*/
 router.get(
   '/github/callback',
   passport.authenticate('github', {
@@ -26,9 +21,6 @@ router.get(
   }
 );
 
-/* #swagger.tags = ['Auth']
-   #swagger.summary = 'Logout user'
-*/
 router.get('/logout', (req, res, next) => {
   req.logout((err) => {
     if (err) {
