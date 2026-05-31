@@ -5,7 +5,7 @@ const swaggerDocument = require('./swagger-output.json');
 const passport = require('passport');
 const session = require('express-session');
 const gitHubStrategy = require('passport-github2').Strategy;
-const cors = require(cors)
+const cors = require('cors')
 
 const port = process.env.PORT || 2000;
 const app = express();
