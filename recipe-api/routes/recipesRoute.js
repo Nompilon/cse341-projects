@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const recipesController = require('../controllers/recipesController');
-//const { isAuthenticated} = require('../middleware/authenticate')
+const { isAuthenticated} = require('../middleware/authenticate')
 
 /* #swagger.tags = ['Recipes']
    #swagger.summary = 'Get all recipes'

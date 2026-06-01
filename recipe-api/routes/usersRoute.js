@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const usersController = require('../controllers/usersController');
-//const { isManager } = require('../middleware/authenticate');
+const { isManager } = require('../middleware/authenticate');
 
 /* #swagger.tags = ['Users']
    #swagger.summary = 'Get all users'
