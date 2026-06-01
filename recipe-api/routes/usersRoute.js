@@ -6,17 +6,17 @@ const { isManager } = require('../middleware/authenticate');
 /* #swagger.tags = ['Users']
    #swagger.summary = 'Get all users'
 */
-router.get('/', usersController.getAllUsers);
+router.get('/', isManager, usersController.getAllUsers);
 
 /* #swagger.tags = ['Users']
    #swagger.summary = 'Get single user  by id'
 */
-router.get('/:id', usersController.getSingleUser);
+router.get('/:id', isManager, usersController.getSingleUser);
 
 /* #swagger.tags = ['Users']
    #swagger.summary = 'Create user'
 */
-router.post('/', usersController.createUser);
+router.post('/', isManager, usersController.createUser);
 
 /* #swagger.tags = ['Users']
    #swagger.summary = 'Update user'
@@ -26,6 +26,6 @@ router.put('/:id', usersController.updateUser);
 /* #swagger.tags = ['Users']
    #swagger.summary = 'Delete user'
 */
-router.delete('/:id', usersController.deleteUser);
+router.delete('/:id', isManager, usersController.deleteUser);
 
 module.exports = router;

@@ -16,16 +16,16 @@ router.get('/:id', recipesController.getSingleRecipe);
 /* #swagger.tags = ['Recipes']
    #swagger.summary = 'Create recipe'
 */
-router.post('/', recipesController.createRecipe);
+router.post('/', isAuthenticated, recipesController.createRecipe);
 
 /* #swagger.tags = ['Recipes']
    #swagger.summary = 'Update recipe'
 */
-router.put('/:id', recipesController.updateRecipe);
+router.put('/:id', isAuthenticated, recipesController.updateRecipe);
 
 /* #swagger.tags = ['Recipes']
    #swagger.summary = 'Delete recipe'
 */
-router.delete('/:id', recipesController.deleteRecipe);
+router.delete('/:id', isAuthenticated, recipesController.deleteRecipe);
 
 module.exports = router;
