@@ -57,9 +57,9 @@ app.get('/github/callback', passport.authenticate('github', {
     res.redirect('/');
   });
 
-app.use('/recipes', require('./routes/recipesRoute'));
+//app.use('/recipes', require('./routes/recipesRoute'));
 
-app.use('/users', require('./routes/usersRoute'));
+//app.use('/users', require('./routes/usersRoute'));
 
 app.use(
   '/api-docs',
