@@ -23,6 +23,19 @@ app.use(passport.initialize())
 
 app.use(passport.session())
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Origin, x-Requested-With, Content-Type, Accept,Z-Key, Authorization"
+  );
+  res.setHeader(
+    "Access-cONTROL-Allow-Methods",
+    "GET, POST, DELETE, PUT"
+  );
+  next();
+})
+
 app.use(cors({ methods: ['GET', 'POST', 'DELETE', 'PUT']}))
 app.use(cors({ origin: '*' }))
 app.use('/', require('./routes/index'))
@@ -49,13 +62,13 @@ passport.deserializeUser((user, done) => {
 
 app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : "Logged Out") });
 
-//app.get('/github/callback', passport.authenticate('github', {
-  //failureRedirect: '/api-docs', session: false
-//}),
-  //(req, res) => {
-    //req.session.user = req.user;
-    //res.redirect('/');
-  //});
+app.get('/github/callback', passport.authenticate('github', {
+  failureRedirect: '/api-docs', session: false
+}),
+  (req, res) => {
+    req.session.user = req.user;
+    res.redirect('/');
+  });
 
 //app.use('/recipes', require('./routes/recipesRoute'));
 
