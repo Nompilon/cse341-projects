@@ -12,15 +12,15 @@ router.get(
     (req, res) => { });
 
 /* #swagger.ignore = true */
-//router.get(
-  //'/github/callback',
-  //passport.authenticate('github', {
-    //failureRedirect: '/login'
-  //}),
-  //(req, res) => {
-    //res.redirect('/api-docs');
-  //}
-//);
+router.get(
+  '/github/callback',
+  passport.authenticate('github', {
+    failureRedirect: '/login'
+  }),
+  (req, res) => {
+    res.redirect('/api-docs');
+  }
+);
 
 /* #swagger.ignore = true */
 router.get('/logout', (req, res, next) => {
