@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const bodyParser = require("body-parser")
 const { connectDB } = require('./data/index');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
@@ -11,6 +12,7 @@ const cors = require('cors')
 const app = express();
 
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.use(
   session({
@@ -30,7 +32,7 @@ app.use((req, res, next) => {
     "Origin, x-Requested-With, Content-Type, Accept,Z-Key, Authorization"
   );
   res.setHeader(
-    "Access-cONTROL-Allow-Methods",
+    "Access-Control-Allow-Methods",
     "GET, POST, DELETE, PUT"
   );
   next();
@@ -60,8 +62,10 @@ passport.deserializeUser((user, done) => {
   done(null, user);
 });
 
+/* #swagger.ignore = true */
 app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : "Logged Out") });
 
+/* #swagger.ignore = true */
 app.get('/github/callback', passport.authenticate('github', {
   failureRedirect: '/api-docs', session: false
 }),
