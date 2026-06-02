@@ -67,14 +67,15 @@ passport.deserializeUser((user, done) => {
 app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : "Logged Out") });
 
 /* #swagger.ignore = true */
-app.get('/github/callback', passport.authenticate('github', {
-  failureRedirect: '/api-docs', session: false
-}),
+app.get(
+  '/github/callback',
+  passport.authenticate('github', {
+    failureRedirect: '/api-docs'
+  }),
   (req, res) => {
-    req.session.user = req.user;
-    res.redirect('/');
-  });
-
+    res.redirect('/api-docs');
+  }
+);
 //app.use('/recipes', require('./routes/recipesRoute'));
 
 //app.use('/users', require('./routes/usersRoute'));
