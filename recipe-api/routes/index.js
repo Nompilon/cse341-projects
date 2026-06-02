@@ -5,6 +5,9 @@ const passport = require("passport");
 router.use("/recipes", require("./recipesRoute"));
 router.use("/users", require("./usersRoute"));
 
+router.get('/whoami', (req, res) => {
+  res.json(req.user);
+});
 
 /* #swagger.ignore = true */
 router.get(
