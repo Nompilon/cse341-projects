@@ -31,7 +31,7 @@
         }
       }
     },
-    "/whoami": {
+    "/test": {
       "get": {
         "description": "",
         "responses": {
