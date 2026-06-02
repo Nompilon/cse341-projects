@@ -41,6 +41,16 @@
         }
       }
     },
+    "/whoami": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/login": {
       "get": {
         "description": "",

@@ -9,6 +9,14 @@ router.get('/test', (req, res) => {
   res.send('TEST ROUTE WORKS');
 });
 
+router.get('/whoami', (req, res) => {
+  res.json({
+    authenticated: req.isAuthenticated(),
+    user: req.user || null,
+    sessionUser: req.session.user || null
+  });
+});
+
 /* #swagger.ignore = true */
 router.get(
     '/login',
