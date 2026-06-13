@@ -6,12 +6,11 @@ const doc = {
     version: "1.0.0",
     description:
       "API documentation for TikCat, a ticketing platform built with Node.js, Express, MongoDB, Passport.js, and JWT authentication.",
-    site: "cse341-projects-r8m6.onrender.com",
   },
 
   host:
     process.env.NODE_ENV === "production"
-      ? "https://cse341-projects-r8m6.onrender.com"
+      ? "cse341-projects-r8m6.onrender.com"
       : "localhost:3000",
 
   schemes: process.env.NODE_ENV === "production" ? ["https"] : ["http"],
@@ -100,6 +99,8 @@ const doc = {
 };
 
 const outputFile = "./swagger.json";
-const endpointFiles = ["../app.js"];
+const path = require("path");
+
+const endpointFiles = [path.join(__dirname, "../app.js")];
 
 swaggerAutogen(outputFile, endpointFiles, doc);
