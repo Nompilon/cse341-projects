@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikCat API</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/medium.css">
+    <link rel="stylesheet" href="/css/larger.css">
+
+    <script src="/js/navBar.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/stats.js" defer></script>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikCat API</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/medium.css">
+    <link rel="stylesheet" href="/css/larger.css">
+
+    <script src="/js/navBar.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/stats.js" defer></script>
+
+</head>
+
+<body>
+
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            TikCat API
+        </a>
+
+        <button class="menu-toggle" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#endpoints">Endpoints</a></li>
+            <li><a href="/api-docs" target="_blank">Documentation</a></li>
+        </ul>
+
+        <a href="http://localhost:5000/auth/google" class="sign-in-btn">
+            Sign in
+        </a>
+
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+
+    <!-- Video background -->
+    <div class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="videos/hero-tikcat.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Dark overlay for contrast -->
+    <div class="hero-overlay"></div>
+
+    <!-- Existing content (unchanged) -->
+    <div class="hero-content">
+
+        <div class="status-badge online">
+            <span class="status-dot"></span>
+            <span id="api-status">API Online</span>
+        </div>
+
+        <h1>Modern Event Ticketing API</h1>
+
+        <p>
+            Manage events, venues, attendees, ticket sales,
+            orders, authentication, and QR-code validation
+            through a powerful RESTful API.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/donate" target="_blank" class="btn">
+                Donate
+            </a>
+
+            <a href="http://localhost:5000/auth/google" class="btn btn-secondary">
+                Explore
+            </a>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="stat-card">
+                <span id="event-count" class="counter">150</span>
+                <p>Events</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="venue-count" class="counter">40</span>
+                <p>Venues</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="ticket-count" class="counter">5000</span>
+                <p>Tickets Sold</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="user-count" class="counter">1200</span>
+                <p>Users</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+
+        <div class="container">
+
+            <h2>About TikCat API</h2>
+
+            <p class="section-intro">
+                TikCat API provides a complete event-ticketing backend
+                solution for developers and organizations. Create events,
+                manage venues, sell tickets, process orders, authenticate
+                users, and validate tickets using QR codes.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+
+        <div class="container">
+
+            <h2>Core Features</h2>
+
+            <div class="cards">
+
+                <article class="glass-card">
+                    <h3>Event Management</h3>
+                    <p>Create and manage public or private events.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Venue Management</h3>
+                    <p>Manage event locations and capacities.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Ticket Generation</h3>
+                    <p>Automatically generate unique tickets.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>QR Code Validation</h3>
+                    <p>Validate tickets securely at entry points.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Order Processing</h3>
+                    <p>Handle purchases and ticket reservations.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>OAuth Authentication</h3>
+                    <p>Google and GitHub login integration.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Dashboard Analytics</h3>
+                    <p>Track revenue, orders, events and users.</p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Swagger Documentation</h3>
+                    <p>Interactive API testing and exploration.</p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- USERS -->
+    <section id="users" class="target-users">
+
+        <div class="container">
+
+            <h2>Who Uses TikCat API?</h2>
+
+            <div class="cards">
+
+                <article class="glass-card">
+                    <h3>Event Organizers</h3>
+                    <p>
+                        Create, manage and monitor events.
+                    </p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Venue Managers</h3>
+                    <p>
+                        Manage event venues and capacities.
+                    </p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Developers</h3>
+                    <p>
+                        Integrate ticketing into websites and apps.
+                    </p>
+                </article>
+
+                <article class="glass-card">
+                    <h3>Attendees</h3>
+                    <p>
+                        Purchase and validate event tickets.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+
+        <div class="container">
+
+            <h2>How It Works</h2>
+
+            <div class="steps">
+
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Authenticate</h3>
+                    <p>Sign in using Google or GitHub OAuth.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Create Events</h3>
+                    <p>Organizers create events and venues.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Sell Tickets</h3>
+                    <p>Users purchase tickets through orders.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <h3>Validate Entry</h3>
+                    <p>QR codes are scanned at event entry.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ENDPOINTS -->
+    <section id="endpoints" class="endpoints">
+
+        <div class="container">
+
+            <h2>Popular Endpoints</h2>
+
+            <div class="endpoint-grid">
+
+                <div class="endpoint">GET /events</div>
+
+                <div class="endpoint">GET /venues</div>
+
+                <div class="endpoint">GET /categories</div>
+
+                <div class="endpoint">POST /orders</div>
+
+                <div class="endpoint">GET /tickets</div>
+
+                <div class="endpoint">PATCH /tickets/:id/validate</div>
+
+                <div class="endpoint">GET /dashboard/stats</div>
+
+                <div class="endpoint">GET /auth/google</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- API MODULES -->
+    <section class="tech-stack">
+
+        <div class="container">
+
+            <h2>Available Resources</h2>
+
+            <div class="cards">
+
+                <article class="glass-card">Authentication</article>
+
+                <article class="glass-card">Users</article>
+
+                <article class="glass-card">Events</article>
+
+                <article class="glass-card">Categories</article>
+
+                <article class="glass-card">Venues</article>
+
+                <article class="glass-card">Orders</article>
+
+                <article class="glass-card">Tickets</article>
+
+                <article class="glass-card">Dashboard</article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech-stack">
+
+        <div class="container">
+
+            <h2>Technology Stack</h2>
+
+            <div class="cards">
+
+                <article class="glass-card">Node.js</article>
+
+                <article class="glass-card">Express.js</article>
+
+                <article class="glass-card">MongoDB Atlas</article>
+
+                <article class="glass-card">Mongoose</article>
+
+                <article class="glass-card">Passport.js</article>
+
+                <article class="glass-card">JWT</article>
+
+                <article class="glass-card">Swagger</article>
+
+                <article class="glass-card">Render</article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        TikCat API v1.0.0
+    </p>
+
+    <p>
+        Event Ticketing Platform API
+    </p>
+
+    <br>
+
+    <p>
+        © <span id="current-year"></span>
+        TikCat API
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

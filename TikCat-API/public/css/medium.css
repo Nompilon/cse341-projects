@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .sign-in-btn {
+        display: none;
+    }
+
+    .hero {
+        padding: 5rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 260px;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
