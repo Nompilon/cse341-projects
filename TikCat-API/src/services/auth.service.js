@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
 const generateToken = require("../utils/generateToken");
-const AppError = require("../utils/appError");
+const AppError = require("../utils/AppError");
 const { ROLES } = require("../utils/constants");
 
 /**
