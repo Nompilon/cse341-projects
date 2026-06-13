@@ -12,7 +12,7 @@ const doc = {
   host:
     process.env.NODE_ENV === "production"
       ? "https://cse341-projects-r8m6.onrender.com"
-      : "localhost:5000",
+      : "localhost:3000",
 
   schemes: process.env.NODE_ENV === "production" ? ["https"] : ["http"],
 
