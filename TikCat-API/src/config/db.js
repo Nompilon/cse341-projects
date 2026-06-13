@@ -5,7 +5,6 @@ const connectDB = async () => {
     console.log("Connecting to MongoDB...");
 
     await mongoose.connect(process.env.MONGODB_URI, {
-      dbName: "TikCatdb"
     });
 
     console.log("MongoDB Connected");
