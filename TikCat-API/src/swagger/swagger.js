@@ -11,7 +11,7 @@ const doc = {
 
   host:
     process.env.NODE_ENV === "production"
-      ? "tikcat-api.onrender.com"
+      ? "https://cse341-projects-r8m6.onrender.com"
       : "localhost:5000",
 
   schemes: process.env.NODE_ENV === "production" ? ["https"] : ["http"],
