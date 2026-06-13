@@ -30,10 +30,10 @@
     "passport-google-oauth20": "^2.0.0",
     "qrcode": "^1.5.4",
     "swagger-autogen": "^2.23.7",
+    "bcrypt": "^6.0.0",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
-    "bcrypt": "^6.0.0",
     "eslint": "^10.4.0",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.3"
