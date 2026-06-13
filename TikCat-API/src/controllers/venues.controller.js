@@ -1,3 +1,4 @@
+console.log("🔥 VENUES CONTROLLER HIT");
 const venueService = require("../services/venues.service");
 
 const getAllVenues = async (req, res) => {

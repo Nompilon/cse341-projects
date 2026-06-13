@@ -2,8 +2,8 @@ const express = require("express");
 
 const controller = require("../controllers/venues.controller");
 
-const authenticate = require("../middleware/authenticate");
-const authorize = require("../middleware/authorize");
+//const authenticate = require("../middleware/authenticate");
+//const authorize = require("../middleware/authorize");
 const validateObjectId = require("../middleware/validateObjectId");
 const asyncHandler = require("../utils/asyncHandler");
 
@@ -58,8 +58,8 @@ router.post(
       description: 'Venue created successfully'
     }
   */
-  authenticate,
-  authorize("admin", "organizer"),
+  //authenticate,
+  //authorize("admin", "organizer"),
   asyncHandler(controller.createVenue),
 );
 
@@ -95,8 +95,8 @@ router.put(
     description: 'Venue updated successfully!'
   }
 */
-  authenticate,
-  authorize("admin", "organizer"),
+  //authenticate,
+  //authorize("admin", "organizer"),
   validateObjectId,
   asyncHandler(controller.updateVenue),
 );
@@ -117,8 +117,8 @@ router.delete(
       type: 'string'
     }
   */
-  authenticate,
-  authorize("admin"),
+  //authenticate,
+  //authorize("admin"),
   validateObjectId,
   asyncHandler(controller.deleteVenue),
 );
