@@ -32,6 +32,9 @@ const findOrCreateGoogleUser = async (profile) => {
  * =========================
  */
 const register = async (data) => {
+   console.log("REGISTER FUNCTION HIT");
+  console.log(data);
+  
   const existingUser = await User.findOne({ email: data.email });
 
   if (existingUser) {
